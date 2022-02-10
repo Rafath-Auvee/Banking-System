@@ -6,13 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank</title>
+
+    <!-- tailwindcss  -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+    <header>
+        <h1 class="text-5xl text-zinc-800 text-center  mt-20 mb-20">Bank
+            <span class="text-green-500 font-black">Transaction</span> &
+            <span class="text-orange-500 font-black">Deposit</span> Details </h1>
+    </header>
+
     <main>
-        <h1>
-            Transaction
-        </h1>
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+            <div class="bg-amber-500 p-8 rounded">
+                <h3 class="text-2xl">Deposit</h3>
+                <h4 class="text-4xl">$00</h4>
+            </div>
+            <div class="bg-blue-500 p-8 rounded">
+                <h3 class="text-2xl">Withdraw</h3>
+                <h4 class="text-4xl">$00</h4>
+            </div>
+            <div class="bg-red-500 p-8 rounded">
+                <h3 class="text-2xl">Total Balance</h3>
+                <h4 class="text-4xl">$00</h4>
+            </div>
+        </div>
     </main>
 </body>
 
