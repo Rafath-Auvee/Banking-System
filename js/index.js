@@ -7,6 +7,6 @@ document.getElementById("submit").addEventListener("click", function() {
     console.log(password);
     console.log(email);
 
-    if (userName == "Rafath")
+    if (userName == "admin" && password == "password")
         window.location.href = 'bank.html'
 });

@@ -18,22 +18,40 @@
             <span class="text-orange-500 font-black">Deposit</span> Details </h1>
     </header>
 
-    <main>
-        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+    <main class="w-3/4 mx-auto ">
+        <div class="grid grid-cols-3 gap-4 text-white">
             <div class="bg-amber-500 p-8 rounded">
                 <h3 class="text-2xl">Deposit</h3>
-                <h4 class="text-4xl">$00</h4>
+                <h4 class="text-4xl">$<span id="deposit">0</span></h4>
             </div>
-            <div class="bg-blue-500 p-8 rounded">
+            <div class="bg-sky-500 p-8 rounded">
                 <h3 class="text-2xl">Withdraw</h3>
-                <h4 class="text-4xl">$00</h4>
+                <h4 class="text-4xl">$<span id="withdraw">0</span></h4>
             </div>
-            <div class="bg-red-500 p-8 rounded">
+            <div class="bg-lime-500 p-8 rounded">
                 <h3 class="text-2xl">Total Balance</h3>
-                <h4 class="text-4xl">$00</h4>
+                <h4 class="text-4xl">$<span id="total-amount">0</span></h4>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mt-10">
+            <div class="bg-violet-900 p-8 rounded">
+                <h1 class="text-3xl text-white mb-5">Enter Deposit Amount Here 💲</h1>
+                <input class="placeholder:italic placeholder:text-slate-900 block bg-white w-3/5 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm mb-4" type="number" name=""
+                    id="deposit-amount" placeholder="Deposit Amount">
+                <button id="deposit-submit" class="mt-2 rounded-full bg-purple-600 py-2 px-4 text-white">Click to Deposit</button>
+            </div>
+            <div class="bg-red-800 p-8 rounded">
+                <h1 class="text-3xl text-white  mb-5">Enter Withdraw Amount Here 💲</h1>
+                <input class="placeholder:italic placeholder:text-slate-900 block bg-white w-3/5 border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm mb-4" type="number" name=""
+                    id="withdraw-amount" placeholder="Withdraw Amount">
+                <button id="withdraw-submit" class="mt-2 rounded-full bg-red-500 py-2 px-4 text-white">Click to Withdraw</button>
             </div>
         </div>
     </main>
+
+    <script src="js/bank.js"></script>
+    <!-- <script src="index.js"></script> -->
 </body>
 
 </html>
